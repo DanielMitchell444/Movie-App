@@ -6,40 +6,63 @@
 body{
  margin: 0;
  padding: 0;
- background-color: rgb(238, 238, 238);
+ 
 }
 
 h1{
- text-align: c;
+ text-align: c
+}
+
+h2{
+ color: white;
+ text-align: center;
 }
 
 nav{
  display: flex;
  justify-content: center;
- align-items: center;
- background-color: black;
- height: 100px;
+ padding: 1rem;
+ background-color: #080d19
 }
 
 h1{
- color: white;
+ color: black;
  font-size: 28px;
+ margin-top: 20px;
 }
 
-
-.inputs{
- padding: 8px;
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 40px;
+.field{
+ background-color: transparent;
+ border: 2px solid white;
+ color: white;
+ text-align: center;
+ height: 30px;
+ padding: 0.5rem, 1rem;
+ border-radius: 50px;
+ font-size: 1rem;
 }
 
-.inputs input{
- width: 50%;
- padding: 8px;
- border: 1px solid black;
-}
+h1 {
+    margin: 0
+  }
+  .box {
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid red;
+    background: #ff0;
+  }
+  .hid-box {
+    top: 100%;
+    position: relative;
+    transition: all .3s ease-out;
+    background: #428bca;
+    height: 100%;
+  }
+  
+  .box:hover > .hid-box{
+    top: 0;
+  }
 
 .card{
  display: flex;
@@ -60,9 +83,38 @@ h1{
 .content{
  display: grid;
  grid-template-columns: repeat(3,1fr);
+ background-color: #1d4cb0
 }
 
 img{
  height: 400px;
- width: 400px;
+ width: 300px;
 }
+
+
+.red{
+ color: red;
+}
+
+.yellow{
+ color: yellow;
+}
+
+.green{
+ color: green
+}
+
+
+@media(min-width: 400px){
+.content{
+ display: grid;
+ grid-template-columns: 1fr;
+}
+}
+@media(min-width: 768px){
+ .content{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ }
+}
+
